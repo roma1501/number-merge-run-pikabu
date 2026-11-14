@@ -7,7 +7,7 @@ PikabuShop.setup({
     ready: () => !!(typeof Shop !== 'undefined' && Shop.state && Shop.items().length && typeof Game !== 'undefined'),
     visible: () => Game.state === 'menu',
     persist: () => Shop._save('pikabu'),
-    button: { corner: 'tr', x: 12, y: 74 },
+    button: { corner: 'tr', x: 12, y: 280 },
     packs: [
         { id: 'coins_s', type: 'consumable', icon: '🪙', name: 'Горсть монет', desc: '8 000 монет на облики, следы и трассы', grant: () => Shop.addCoins(8000) },
         { id: 'coins_m', type: 'consumable', icon: '💰', name: 'Мешок монет', desc: '25 000 монет', grant: () => Shop.addCoins(25000) },
